@@ -43,7 +43,7 @@ body {
 
 .top-section {
     display: flex;
-    background-image: url('./top.png');
+    background-image: url('./assets/Hero\ Header.png');
     height: 768px;
     padding-left: 64px;
     padding-right: 64px;
@@ -127,6 +127,7 @@ body {
 .btn-prev {
     width: 90%;
     height: 56px;
+    color: #F9B21A;
     border: rgb(250, 196, 78) 1px solid;
     background-color: rgb(255, 248, 233);
     box-shadow: 0px 4px 12px 0px #0000001C;
@@ -156,7 +157,7 @@ body {
 
 .middle-section {
     background-color: #F9B21A;
-    background-image: url('./middle.png');
+    background-image: url('./assets/How\ It\ Works.png');
     background-repeat: no-repeat;
     background-position: right;
     min-height: 382px;
@@ -214,24 +215,18 @@ body {
     font-style: italic;
 }
 
-.checkbox-lg .form-check-input {
-    scale: 1.8;
-    margin-right: 0.7rem;
-    margin-left: -8px;
-}
-
-.checkbox-lg .form-check-label {
-    padding-top: 13px;
-}
-
 input[type="checkbox"] {
     accent-color: #F9B21A;
+}
+
+.form-check {
+    padding-left: 0px;
 }
 
 .form-check-label {
     font-size: 21px;
     margin-top: -16px;
-    margin-left: 24px;
+    margin-left: 0px;
 }
 
 .middle-section .title {
@@ -250,6 +245,7 @@ input[type="checkbox"] {
 .q-input {
     border: 0px;
     margin-top: -8px;
+    font-size: 21px;
 }
 
 .btn-subscribe {
@@ -263,12 +259,6 @@ input[type="checkbox"] {
     align-items: center;
     display: flex;
     justify-content: center;
-}
-
-#firstNameInput,
-#emailInput {
-    width: 280px;
-    height: 30px;
 }
 
 .pros-content {
@@ -294,6 +284,26 @@ input[type="checkbox"] {
     margin-top: 0px;
     height: 60px;
     padding-top: 16px;
+}
+
+.form-check-input {
+    display:none;
+}
+
+.form-check-input + label{
+    background:url('./assets/Checkbox\ Icon.svg') no-repeat;
+    height: 18px;
+    width: 16px;
+    display:inline;
+    padding: 4px 0 0 36px;
+}
+
+.form-check-input:checked + label{
+    background:url('./assets/Checkbox\ Icon\ Active.svg') no-repeat;
+    height: 18px;
+    width: 16px;
+    display:inline;
+    padding: 4px 0 0 36px;
 }
 
 @media (max-width: 1200px) {

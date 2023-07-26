@@ -26,10 +26,17 @@ setIndicatorActive = (index) => {
         $(`.question-div-${i + 1}`).hide();
     }
     $(`.question-div-${index + 1}`).show();
+    if (index === 7) {
+        $(`.btn-prev`).html(`<img src="./assets/Refresh Icon.svg" /> Review`);
+        $(`.btn-next`).html(`Submit Answers <img src="./assets/Next Icon.svg" />`);
+    } else {
+        $(`.btn-prev`).html(`<img src="./assets/Back Icon.svg" /> Go Back`);
+        $(`.btn-next`).html(`Next Question <img src="./assets/Next Icon.svg" />`);
+    }
 }
 
 onPrevQuestion = () => {
-    activeIndicator = activeIndicator === 0 ? 7 : (activeIndicator - 1) % 8;
+    activeIndicator = activeIndicator === 7 ? 0 : activeIndicator === 0 ? 7 : (activeIndicator - 1) % 8;
     setIndicatorActive(activeIndicator);
 }
 
