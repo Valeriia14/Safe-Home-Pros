@@ -61,7 +61,7 @@ body {
     display: flex;
     align-items: center;
     width: 100%;
-    justify-content: flex-end
+    justify-content: center;
 }
 
 .text1 {
@@ -167,10 +167,16 @@ body {
     padding-left: 64px;
 }
 
+.middle-section img {
+    width: 32px;
+}
+
 .middle-section .item {
     width: 200px;
     text-align: center;
     font-size: 18px;
+    margin-left: 12px;
+    margin-right: 12px;
 }
 
 .middle-section .item .item-text {
@@ -287,22 +293,22 @@ input[type="checkbox"] {
 }
 
 .form-check-input {
-    display:none;
+    display: none;
 }
 
-.form-check-input + label{
-    background:url('./assets/Checkbox\ Icon.svg') no-repeat;
+.form-check-input+label {
+    background: url('./assets/Checkbox\ Icon.svg') no-repeat;
     height: 18px;
     width: 16px;
-    display:inline;
+    display: inline;
     padding: 4px 0 0 36px;
 }
 
-.form-check-input:checked + label{
-    background:url('./assets/Checkbox\ Icon\ Active.svg') no-repeat;
+.form-check-input:checked+label {
+    background: url('./assets/Checkbox\ Icon\ Active.svg') no-repeat;
     height: 18px;
     width: 16px;
-    display:inline;
+    display: inline;
     padding: 4px 0 0 36px;
 }
 
@@ -313,7 +319,7 @@ input[type="checkbox"] {
         padding-left: 12px;
         padding-right: 12px;
     }
-    
+
     .top-left {
         padding-top: 20px;
     }
@@ -339,6 +345,7 @@ input[type="checkbox"] {
 
     .middle-section .title {
         text-align: center;
+
     }
 
     .middle-section .sub-title {
@@ -380,20 +387,28 @@ input[type="checkbox"] {
 
 @media (max-width: 600px) {
     .text1 {
-        font-size: 48px;
-        line-height: 64px;
+        font-size: 36px;
+        line-height: 48px;
     }
 
     .text2 {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .q-title {
         margin-left: 0px;
     }
 
+    .q-input {
+        font-size: 17px;
+    }
+
     .top-right {
         width: 100%;
+    }
+
+    .q-title {
+        font-size: 20px;
     }
 
     .sub-card {
@@ -401,12 +416,13 @@ input[type="checkbox"] {
     }
 
     .sub-card .form-check-label {
-        font-size: 18px;
+        font-size: 17px;
     }
 
-    .btn-next, .btn-prev {
+    .btn-next,
+    .btn-prev {
         width: 100%;
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .main-card {
@@ -422,7 +438,47 @@ input[type="checkbox"] {
         width: 32px;
     }
 
-    .pros-content {
+    .bottom-section .pros-content {
         text-align: center;
+        width: 100%;
+    }
+
+    .bottom-section .subscribe,
+    .bottom-section .company {
+        width: 100%;
+    }
+
+    .middle-section {
+        padding: 32px 16px;
+    }
+
+    .middle-section .title {
+        font-size: 36px;
+    }
+
+    .middle-section .sub-title {
+        font-size: 19px;
+    }
+
+    .middle-section .items {
+        flex-direction: column;
+    }
+
+    .middle-section .item {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .middle-section .item .item-text {
+        font-size: 16px;
+    }
+
+    .middle-section img {
+        width: 28px;
+    }
+
+    .bottom-section {
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }

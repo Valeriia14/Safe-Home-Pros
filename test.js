@@ -33,6 +33,12 @@ setIndicatorActive = (index) => {
         $(`.btn-prev`).html(`<img src="./assets/Back Icon.svg" /> Go Back`);
         $(`.btn-next`).html(`Next Question <img src="./assets/Next Icon.svg" />`);
     }
+
+    if(index===0) {
+        $(`.btn-prev`).prop('disabled', true);
+    } else {
+        $(`.btn-prev`).prop('disabled', false);
+    }
 }
 
 onPrevQuestion = () => {
