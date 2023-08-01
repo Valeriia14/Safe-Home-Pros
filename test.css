@@ -312,6 +312,14 @@ input[type="checkbox"] {
     padding: 4px 0 0 36px;
 }
 
+.active-question {
+    display: inherit;
+}
+
+.question {
+    display: none;
+}
+
 @media (max-width: 1200px) {
     .top-section {
         display: inherit;
