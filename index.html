@@ -46,250 +46,261 @@
                         <div id="indicatorList" class="indicator-list"></div>
                     </div>
                     <div class="card-body">
-                        <div class="question-div-1  active-question">
-                            <div class="q-title">1. What type of property is this system for?</div>
-                            <div class="q-div">
-                                <div class="card sub-card">
-                                    <div class="card-body">
-                                        <div class="form-check">
-                                            <input class="form-check-input" id="iq11" type="radio" name="q-1"
-                                                value="" />
-                                            <label class="form-check-label" for="iq11">Owned</label>
+                        <form>
+                            <div class="question-div-1  active-question">
+                                <div class="q-title">1. What type of property is this system for?</div>
+                                <div class="q-div">
+                                    <div class="card sub-card">
+                                        <div class="card-body">
+                                            <div class="form-check form-group">
+                                                <input class="form-check-input" id="iq11" type="radio" name="q-1"
+                                                    value="Owned" checked />
+                                                <label class="form-check-label" for="iq11">Owned</label>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="card sub-card">
-                                    <div class="card-body">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="q-1" value=""
-                                                id="iq12" />
-                                            <label class="form-check-label" for="iq12">Rented</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="question-div-2 question">
-                            <div class="q-title">2. What is your zip code?</div>
-                            <div class="q-div">
-                                <div class="card sub-card">
-                                    <div class="card-body">
-                                        <div class="input-group">
-                                            <span class="input-group-addon"><img
-                                                    src="./assets/Location Icon.svg" /></span>
-                                            <input class="q-input form-control"
-                                                placeholder="Enter your Zip code number" />
+                                    <div class="card sub-card">
+                                        <div class="card-body">
+                                            <div class="form-check form-group">
+                                                <input class="form-check-input" type="radio" name="q-1" value="Rented"
+                                                    id="iq12" />
+                                                <label class="form-check-label" for="iq12">Rented</label>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="question-div-3 question">
-                            <div class="q-title">3. What is your installation preference?</div>
-                            <div class="q-div">
-                                <div class="card sub-card">
-                                    <div class="card-body">
-                                        <div class="form-check">
-                                            <input class="form-check-input" id="iq31" type="radio" name="q-3"
-                                                value="" />
-                                            <label class="form-check-label" for="iq31">Professional
-                                                Installation</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card sub-card">
-                                    <div class="card-body">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="q-3" value=""
-                                                id="iq32" />
-                                            <label class="form-check-label" for="iq32">Self
-                                                Installation</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card sub-card">
-                                    <div class="card-body">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="q-3" value=""
-                                                id="iq33" />
-                                            <label class="form-check-label" for="iq33">No Preferences</label>
+                            <div class="question-div-2 question">
+                                <div class="q-title">2. What is your zip code?</div>
+                                <div class="q-div">
+                                    <div class="card sub-card">
+                                        <div class="card-body">
+                                            <div class="input-group form-group">
+                                                <span class="input-group-addon">
+                                                    <img src="./assets/Location Icon.svg" />
+                                                </span>
+                                                <input class="q-input form-control"
+                                                    placeholder="Enter your Zip code number" id="input_zip" required />
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="question-div-4 question">
-                            <div class="q-title">4. What home security features would you like to have? <p
-                                    class="d-inline">(Select answers
-                                    that are applicable to you.)</p>
-                            </div>
-                            <div class="q-div">
-                                <div class="card sub-card">
-                                    <div class="card-body">
-                                        <div class="form-check">
-                                            <input class="form-check-input" id="iq41" type="checkbox" name="q-4"
-                                                value="" />
-                                            <label class="form-check-label" for="iq41">Cameras</label>
+                            <div class="question-div-3 question">
+                                <div class="q-title">3. What is your installation preference?</div>
+                                <div class="q-div">
+                                    <div class="card sub-card">
+                                        <div class="card-body">
+                                            <div class="form-check form-group">
+                                                <input class="form-check-input" id="iq31" type="radio" name="q-3"
+                                                    value="professional" checked />
+                                                <label class="form-check-label" for="iq31">Professional
+                                                    Installation</label>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="card sub-card">
-                                    <div class="card-body">
-                                        <div class="form-check">
-                                            <input class="form-check-input" id="iq42" type="checkbox" name="q-4"
-                                                value="" />
-                                            <label class="form-check-label" for="iq42">Motion Sensors</label>
+                                    <div class="card sub-card">
+                                        <div class="card-body">
+                                            <div class="form-check form-group">
+                                                <input class="form-check-input" type="radio" name="q-3" value="self"
+                                                    id="iq32" />
+                                                <label class="form-check-label" for="iq32">Self
+                                                    Installation</label>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="card sub-card">
-                                    <div class="card-body">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="q-4" value=""
-                                                id="iq43" />
-                                            <label class="form-check-label" for="iq43">Glass Break
-                                                Sensors</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card sub-card">
-                                    <div class="card-body">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="q-4" value=""
-                                                id="iq44" />
-                                            <label class="form-check-label" for="iq44">Doorbell
-                                                Cameras</label>
+                                    <div class="card sub-card">
+                                        <div class="card-body">
+                                            <div class="form-check form-group">
+                                                <input class="form-check-input" type="radio" name="q-3" value="none"
+                                                    id="iq33" />
+                                                <label class="form-check-label" for="iq33">No Preferences</label>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="question-div-5 question">
-                            <div class="q-title">5. What kind of System do you need?</div>
-                            <div class="q-div">
-                                <div class="card sub-card">
-                                    <div class="card-body">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="q-5" value=""
-                                                id="iq51" />
-                                            <label class="form-check-label" for="iq51">Burglar/Intrusion</label>
+                            <div class="question-div-4 question">
+                                <div class="q-title">4. What home security features would you like to have? <p
+                                        class="d-inline">(Select answers
+                                        that are applicable to you.)</p>
+                                </div>
+                                <div class="q-div">
+                                    <div class="card sub-card">
+                                        <div class="card-body">
+                                            <div class="form-check form-group">
+                                                <input class="form-check-input" id="iq41" type="checkbox" name="q-4"
+                                                    value="Cameras" />
+                                                <label class="form-check-label" for="iq41">Cameras</label>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="card sub-card">
-                                    <div class="card-body">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="q-5" value=""
-                                                id="iq52" />
-                                            <label class="form-check-label" for="iq52">Fire Detection</label>
+                                    <div class="card sub-card">
+                                        <div class="card-body">
+                                            <div class="form-check form-group">
+                                                <input class="form-check-input" id="iq42" type="checkbox" name="q-4"
+                                                    value="Motion Sensors" />
+                                                <label class="form-check-label" for="iq42">Motion Sensors</label>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="card sub-card">
-                                    <div class="card-body">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="q-5" value=""
-                                                id="iq53" />
-                                            <label class="form-check-label" for="iq53">Both Burglar & Fire
-                                                Detection</label>
+                                    <div class="card sub-card">
+                                        <div class="card-body">
+                                            <div class="form-check form-group">
+                                                <input class="form-check-input" type="checkbox" name="q-4" value="Glass Break Sensors"
+                                                    id="iq43" />
+                                                <label class="form-check-label" for="iq43">Glass Break
+                                                    Sensors</label>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="question-div-6 question">
-                            <div class="q-title">6. How many entrances exist?</div>
-                            <div class="q-div">
-                                <div class="card sub-card">
-                                    <div class="card-body">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="q-6" value=""
-                                                id="iq61" />
-                                            <label class="form-check-label" for="iq61">1</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card sub-card">
-                                    <div class="card-body">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="q-6" value=""
-                                                id="iq62" />
-                                            <label class="form-check-label" for="iq62">2 - 4</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card sub-card">
-                                    <div class="card-body">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="q-6" value=""
-                                                id="iq63" />
-                                            <label class="form-check-label" for="iq63">5</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card sub-card">
-                                    <div class="card-body">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="q-6" value=""
-                                                id="iq64" />
-                                            <label class="form-check-label" for="iq64">More than 5</label>
+                                    <div class="card sub-card">
+                                        <div class="card-body">
+                                            <div class="form-check form-group">
+                                                <input class="form-check-input" type="checkbox" name="q-4" value="Doorbell Cameras"
+                                                    id="iq44" />
+                                                <label class="form-check-label" for="iq44">Doorbell
+                                                    Cameras</label>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="question-div-7 question">
-                            <div class="q-title">7. What is your address?</div>
-                            <div class="q-div">
-                                <div class="card sub-card">
-                                    <div class="card-body">
-                                        <div class="input-group">
-                                            <span class="input-group-addon"><img
-                                                    src="./assets/Location Icon.svg" /></span>
-                                            <input class="q-input form-control" placeholder="Enter your address" />
+                            <div class="question-div-5 question">
+                                <div class="q-title">5. What kind of System do you need?</div>
+                                <div class="q-div">
+                                    <div class="card sub-card">
+                                        <div class="card-body">
+                                            <div class="form-check form-group">
+                                                <input class="form-check-input" type="radio" name="q-5" value="burglar"
+                                                    id="iq51" checked />
+                                                <label class="form-check-label" for="iq51">Burglar/Intrusion</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card sub-card">
+                                        <div class="card-body">
+                                            <div class="form-check form-group">
+                                                <input class="form-check-input" type="radio" name="q-5" value="fire"
+                                                    id="iq52" />
+                                                <label class="form-check-label" for="iq52">Fire Detection</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card sub-card">
+                                        <div class="card-body">
+                                            <div class="form-check form-group">
+                                                <input class="form-check-input" type="radio" name="q-5" value="both"
+                                                    id="iq53" />
+                                                <label class="form-check-label" for="iq53">Both Burglar & Fire
+                                                    Detection</label>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                            <div class="question-div-6 question">
+                                <div class="q-title">6. How many entrances exist?</div>
+                                <div class="q-div">
+                                    <div class="card sub-card">
+                                        <div class="card-body">
+                                            <div class="form-check form-group">
+                                                <input class="form-check-input" type="radio" name="q-6" value="1"
+                                                    id="iq61" checked />
+                                                <label class="form-check-label" for="iq61">1</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card sub-card">
+                                        <div class="card-body">
+                                            <div class="form-check form-group">
+                                                <input class="form-check-input" type="radio" name="q-6" value="2-4"
+                                                    id="iq62" />
+                                                <label class="form-check-label" for="iq62">2 - 4</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card sub-card">
+                                        <div class="card-body">
+                                            <div class="form-check form-group">
+                                                <input class="form-check-input" type="radio" name="q-6" value="5"
+                                                    id="iq63" />
+                                                <label class="form-check-label" for="iq63">5</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card sub-card">
+                                        <div class="card-body">
+                                            <div class="form-check form-group">
+                                                <input class="form-check-input" type="radio" name="q-6" value="6+"
+                                                    id="iq64" />
+                                                <label class="form-check-label" for="iq64">More than 5</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="question-div-7 question">
+                                <div class="q-title">7. What is your address?</div>
+                                <div class="q-div">
+                                    <div class="card sub-card">
+                                        <div class="card-body">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><img
+                                                        src="./assets/Location Icon.svg" /></span>
+                                                <input class="q-input form-control" placeholder="Enter your address" id="input_address" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                        <div class="question-div-8 question">
-                            <div class="q-title">8. Please fill in your details.</div>
-                            <div class="q-div">
-                                <div class="card sub-card">
-                                    <div class="card-body">
-                                        <div class="input-group">
-                                            <span class="input-group-addon"><img src="./assets/User Icon.svg" /></span>
-                                            <input class="q-input form-control" placeholder="First Name" required>
+                            <div class="question-div-8 question">
+                                <div class="q-title">8. Please fill in your details.</div>
+                                <div class="q-div">
+                                    <div class="card sub-card">
+                                        <div class="card-body">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><img
+                                                        src="./assets/User Icon.svg" /></span>
+                                                <input id="input_first_name" type="text" class="q-input form-control"
+                                                    placeholder="First Name" required>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="card sub-card">
-                                    <div class="card-body">
-                                        <div class="input-group">
-                                            <span class="input-group-addon"><img src="./assets/User Icon.svg" /></span>
-                                            <input class="q-input form-control" placeholder="Last Name" />
+                                    <div class="card sub-card">
+                                        <div class="card-body">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><img
+                                                        src="./assets/User Icon.svg" /></span>
+                                                <input id="input_last_name" type="text" class="q-input form-control"
+                                                    placeholder="Last Name" required />
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="card sub-card">
-                                    <div class="card-body">
-                                        <div class="input-group">
-                                            <span class="input-group-addon"><img src="./assets/Email Icon.svg" /></span>
-                                            <input class="q-input form-control" placeholder="Email Address">
+                                    <div class="card sub-card">
+                                        <div class="card-body">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><img
+                                                        src="./assets/Email Icon.svg" /></span>
+                                                <input id="input_email" class="q-input form-control"
+                                                    placeholder="Email Address" required />
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="card sub-card">
-                                    <div class="card-body">
-                                        <div class="input-group">
-                                            <span class="input-group-addon"><img src="./assets/Phone Icon.svg" /></span>
-                                            <input class="q-input form-control" placeholder="Phone Number">
+                                    <div class="card sub-card">
+                                        <div class="card-body">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><img
+                                                        src="./assets/Phone Icon.svg" /></span>
+                                                <input id="input_phone" class="q-input form-control"
+                                                    placeholder="Phone Number" required />
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
 
                     <div class="card-footer">
@@ -301,7 +312,7 @@
                                 </button>
                             </div>
                             <div class="col d-flex justify-content-center">
-                                <button type="button" class="btn btn-next" onclick="onNextQuestion()">
+                                <button type="submit" class="btn btn-next" onclick="onNextQuestion()">
                                     Next Question <img src="./assets/Next Icon.svg" />
                                 </button>
                             </div>
